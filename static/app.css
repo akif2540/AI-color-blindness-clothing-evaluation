@@ -1,0 +1,206 @@
+.colorBox {
+    width: 100px;
+    height: 1.25rem;
+    display: inline-flex;
+    margin-left: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+/*uyumlu olma arka plan*/
+
+.compatibility-text {
+  
+    padding: 10px; /* Kenar boşluklarını ayarla */
+    max-width: 300px; /* Maksimum genişliği belirle */
+    margin: 0 auto; /* Merkezlemek için otomatik kenar boşluğu ekle */
+    border-radius: 50px; /* Köşeleri yuvarla */
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px; /* Metin boyutu */
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.inputImage {
+    margin-bottom: 20px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-wrapper {
+    margin-right: 20px;
+}
+
+.prediction-container {
+    max-width: 300px;
+}
+
+.prediction-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prediction-box .colorBox {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.rgb-values {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+
+.compatibility-text.green {
+    color: green;
+    background-color: lightgreen;
+}
+
+.compatibility-text.red {
+    color: red;
+    background-color: lightcoral;
+}
+
+.compatibility-text-container {
+    display: inline-block; /* Blok elementi gibi davran, ancak diğer içerikle yan yana yerleştir */
+    padding: 5px 10px; /* İstenilen dolay alanı için içerideki boşlukları belirt */
+    border-radius: 5px;
+}
+
+
+.green {
+    color: green;
+    background-color: lightgreen;
+}
+
+.red {
+    color: red;
+    background-color: lightcoral;
+}
+
+
+.answer {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: white;
+    background-repeat: no-repeat;
+    background: #2fd9ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #401f95, #2ff1ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f6086, #FF512F);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+.prediction-container {
+    display: flex; /* Flexbox kullanarak içeriği yatay olarak hizala */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.prediction-box {
+    margin-right: 10px; /* Tahmin kutuları arasında bir boşluk bırak */
+}
+.compatibility-message {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+<style>
+    body {
+        color: white;
+        background: url('/static/arkaplan.webp') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+
+    .inputImage {
+        margin-bottom: 20px;
+    }
+
+    .compatibility-text {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .image-wrapper {
+        margin-right: 20px;
+    }
+
+    .prediction-container {
+        max-width: 300px;
+    }
+
+    .prediction-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .prediction-box .colorBox {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .rgb-values {
+        font-size: 0.9em;
+        color: #ddd;
+    }
+</style>
