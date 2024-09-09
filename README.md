@@ -1,4 +1,3 @@
-https://github.com/user-attachments/assets/ce9b63af-b328-49e1-bbcc-86bd8a8079ad
 
 # Yapay Zekâ Destekli Giysi Renk Uyumu Değerlendirme Uygulaması (Renk Körlüğü İçin)
 
@@ -39,4 +38,10 @@ Renk uyumunu değerlendiren makine öğrenimi modeli, web sitesiyle entegre edil
 
 ### 6. Test ve Geri Bildirim:
 Geliştirilen web sitesi, renk körü ve normal renk algısına sahip kullanıcılar üzerinde test edilecek, geri bildirimler
+
+https://github.com/user-attachments/assets/ce9b63af-b328-49e1-bbcc-86bd8a8079ad
+
+
+[akdeniz kongre.pdf](https://github.com/user-attachments/files/16931038/akdeniz.kongre.pdf)
+
 
