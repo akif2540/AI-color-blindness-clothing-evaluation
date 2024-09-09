@@ -1,32 +1,28 @@
-from flask import Flask, render_template, request
-from  flask import  jsonify
-import requests
+from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
 
+# Flask uygulamasını oluştur
 app = Flask(__name__)
+
+# Eğitilmiş model dosyasını yükle
 model = pickle.load(open('color.pkl', 'rb'))
 
-@app.route('/',methods=['GET'])
-def Home():
-    return render_template('index.html')
+# Ana sayfa rota tanımı (GET isteği)
+@app.route('/', methods=['GET'])
+def home():
+    return render_template('index.html')  # index.html dosyasını render et
 
-@app.route('/predict',methods=['GET','POST'])
+# Tahmin yapma rota tanımı (POST isteği)
+@app.route('/predict', methods=['POST'])
 def predict():
-    if request.method == 'GET':
-        message = {'answer':'Your answer is showed here'}
-        return message
-    if request.method == 'POST':
-        data=str(request.data)
-        # answer = model.predict([[request.body]]);
-        predictionData = data[3:-2].split(',')
-        r=int(predictionData[0])
-        g=int(predictionData[1])
-        b=int(predictionData[2])
-        answer=model.predict([[r,g,b]])
-        # print(answer)
-        message = {'answer':answer[0]}
-        return message
+    data = request.get_json()  # İstekten JSON verisini al
+    r = int(data['r'])  # Kırmızı değerini al ve tamsayıya çevir
+    g = int(data['g'])  # Yeşil değerini al ve tamsayıya çevir
+    b = int(data['b'])  # Mavi değerini al ve tamsayıya çevir
+    prediction = model.predict([[r, g, b]])  # Model ile tahmin yap
+    return jsonify({'answer': prediction[0]})  # Tahmin sonucunu JSON formatında döndür
 
-if __name__=="__main__":
-    app.run(debug=True)
+# Uygulamanın ana fonksiyonu
+if __name__ == "__main__":
+    app.run(debug=True)  # Uygulamayı debug modunda çalıştır
