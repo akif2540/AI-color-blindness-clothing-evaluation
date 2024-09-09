@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/ce9b63af-b328-49e1-bbcc-86bd8a8079ad
+
 # Yapay Zekâ Destekli Giysi Renk Uyumu Değerlendirme Uygulaması (Renk Körlüğü İçin)
 
 Bu projede, renk körlerinin giysi seçimini kolaylaştırmak amacıyla bir web tabanlı uygulama geliştirilmektedir. Renk körleri, renk algılamadaki zorluklar nedeniyle giysi kombinasyonlarını seçerken güçlük yaşayabilirler. Bu web sitesi, kullanıcılara renk uyumluluğunu değerlendirme ve uygun kombinasyonları seçme konusunda rehberlik etmeyi hedeflemektedir.
@@ -37,3 +39,4 @@ Renk uyumunu değerlendiren makine öğrenimi modeli, web sitesiyle entegre edil
 
 ### 6. Test ve Geri Bildirim:
 Geliştirilen web sitesi, renk körü ve normal renk algısına sahip kullanıcılar üzerinde test edilecek, geri bildirimler
+
